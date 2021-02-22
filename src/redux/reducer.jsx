@@ -9,20 +9,23 @@ const INITIAL_STATE = {
 
 // Complete the three cases below
 const reducer = (state = INITIAL_STATE, action) => {
-  switch (action.type) {
-    case ADD_ITEM:
-      return {
-        wishList: ,
-      };
-    case DELETE_ITEM:
-      return {
-        wishList: ,
-      };
-    default:
-      return {
-        wishList: ,
-      };
-  }
+    switch (action.type) {
+        case ADD_ITEM:
+            return {
+                wishList: [
+                    ...state.wishList,
+                    action.payload
+                ]
+            };
+        case DELETE_ITEM:
+            return {
+                wishList: state.wishList.filter((item, i) => i !== action.payload)
+            };
+        default:
+            return {
+                wishList: [],
+            };
+    }
 };
 
 export default reducer;

@@ -5,9 +5,106 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: gainsboro;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.container {
+  width: 400px;
+  height: 540px;
+  background-color: pink;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 20px #000;
+}
+
+.inputForm {
+  text-align: center;
+}
+
+.inputColumn {
+  width: 250px;
+  height: 35px;
+  margin-top: 15px;
+  padding-left: 10px;
+}
+
+button {
+  margin-top: 12px;
+  background-color: #9AEA90;
+  border: 0px;
+  border-radius: 5px;
+  box-shadow: 0 0 4px grey;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+}
+
+button:focus{
+  outline: none;
+}
+
+.addButton {
+  width: 130px;
+  height: 50px;
+}
+
+.submitButton {
+  width: 260px;
+  height: 50px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 25px;
+  padding-top: 30px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.inputColumn:focus {
+  outline: none !important;
+  border:1px solid #ABD3FC;
+  border-radius: 5px;
+}
+
+.content {
+  width: 260px;
+  height: 240px;
+  background-color: white;
+  border: 2px solid black;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.item {
+  margin-left: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  height: 20px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
